@@ -9,6 +9,7 @@ make sure you have only one entry of Ip address 127.0.0.1 in "hosts" file
 
 hbase-site.xml sample: (change in config only "hbase.rootdir" and hbase.zookeeper.property.dataDir)
 
+```xml
 <configuration>
   <property>
     <name>hbase.zookeeper.quorum</name>
@@ -28,7 +29,7 @@ hbase-site.xml sample: (change in config only "hbase.rootdir" and hbase.zookeepe
     <value>/home/md/opt/hbase/hbase-1.1.3/tmp/zookeeper</value>
   </property>
 </configuration>
-
+```
 
 2) execute in "./bin/hbase shell"
 create 'test', 'cf'
