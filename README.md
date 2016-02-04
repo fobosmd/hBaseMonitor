@@ -3,6 +3,7 @@
 Installing
 
 1) install hBase 1.1.3.
+
 Installation guide: http://hbase.apache.org/0.94/book/quickstart.html
 
 make sure you have only one entry of Ip address 127.0.0.1 in "hosts" file
@@ -32,9 +33,14 @@ hbase-site.xml sample: (change in config only "hbase.rootdir" and hbase.zookeepe
 ```
 
 2) execute in "./bin/hbase shell"
+
 create 'test', 'cf'
+
 alter 'test', NAME => 'cf', VERSIONS => 100
 
+
 3) run class that populate DB with data com.klystopad.xyzbank.MsgProducerApp2
+
 4) run monitoring App com.klystopad.xyzbank.MsgMonitorApp
+
 5) open in browser http://localhost:8080/index
